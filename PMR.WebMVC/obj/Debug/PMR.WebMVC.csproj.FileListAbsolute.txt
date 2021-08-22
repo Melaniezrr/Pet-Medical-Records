@@ -1,0 +1,2 @@
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.WebMVC\obj\Debug\PMR.WebMVC.csproj.AssemblyReference.cache
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.WebMVC\obj\Debug\PMR.WebMVC.csproj.CoreCompileInputs.cache
