@@ -54,12 +54,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ClinicService.cs" />
+    <Compile Include="PetService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PMR.Data\PMR.Data.csproj">
+      <Project>{ac1b4ce1-cfca-4258-a492-e359b7704601}</Project>
+      <Name>PMR.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PMR.Models\PMR.Models.csproj">
+      <Project>{4b1cd262-ed4e-47ca-a9a3-8d0ba42c6d43}</Project>
+      <Name>PMR.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

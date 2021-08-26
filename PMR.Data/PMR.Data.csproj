@@ -54,8 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clinic.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Pet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Record.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

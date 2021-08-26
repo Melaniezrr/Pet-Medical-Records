@@ -54,7 +54,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClinicCreate.cs" />
+    <Compile Include="ClinicListItem.cs" />
+    <Compile Include="PetCreate.cs" />
+    <Compile Include="PetListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordCreate.cs" />
+    <Compile Include="RecordListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
