@@ -55,11 +55,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClinicCreate.cs" />
+    <Compile Include="ClinicDetail.cs" />
+    <Compile Include="ClinicEdit.cs" />
     <Compile Include="ClinicListItem.cs" />
     <Compile Include="PetCreate.cs" />
+    <Compile Include="PetDetail.cs" />
+    <Compile Include="PetEdit.cs" />
     <Compile Include="PetListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecordCreate.cs" />
+    <Compile Include="RecordDetail.cs" />
+    <Compile Include="RecordEdit.cs" />
     <Compile Include="RecordListItem.cs" />
   </ItemGroup>
   <ItemGroup>

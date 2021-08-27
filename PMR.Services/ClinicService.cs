@@ -50,5 +50,36 @@ namespace PMR.Services
                 return query.ToArray();
             }
         }
+
+        public ClinicDetail GetById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Clinics
+                    .Single(e => e.ClinicId == id);
+                return new ClinicDetail
+                {
+                    ClinicId = entity.ClinicId,
+                    Address = entity.Address,
+                    Name = entity.Name,
+                };
+            }
+        }
+
+        public bool UpdateClinic(ClinicEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Clinics
+                    .Single(e => e.ClinicId == model.ClinicId);
+
+                entity.Name = model.Name;
+                entity.Address = model.Address;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

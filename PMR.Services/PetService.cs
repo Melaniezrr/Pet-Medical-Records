@@ -53,5 +53,40 @@ namespace PMR.Services
                 return query.ToArray();
             }
         }
+
+        public PetDetail GetById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Pets
+                    .Single(e => e.PetId == id && e.OwnerId == _userId);
+                return new PetDetail
+                {
+                    PetId = entity.PetId,
+                    Name = entity.Name,
+                    OwnerId = entity.OwnerId,
+                    Age = entity.Age,
+                    Type = entity.Type
+                };
+            }
+        }
+
+        public bool UpdatePet(PetEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Pets
+                    .Single(e => e.PetId == model.PetId && e.OwnerId == _userId);
+
+                entity.Name = model.Name;
+                entity.OwnerId = model.OwnerId;
+                entity.Age = model.Age;
+                entity.Type = model.Type;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

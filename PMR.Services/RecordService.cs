@@ -54,5 +54,43 @@ namespace PMR.Services
                 return query.ToArray();
             }
         }
+
+        public RecordDetail GetById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Records
+                    .Single(e => e.RecordId == id && e.OwnerId == _userId);
+                return new RecordDetail
+                {
+                    RecordId = entity.RecordId,
+                    PetId = entity.PetId,
+                    ClinicId = entity.ClinicId,
+                    OwnerId = entity.OwnerId,
+                    VaccineName = entity.VaccineName,
+                    Date = entity.Date,
+                    
+                };
+            }
+        }
+
+        public bool UpdateRecord(RecordEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Records
+                    .Single(e => e.RecordId == model.RecordId && e.OwnerId == _userId);
+
+                entity.PetId = entity.PetId;
+                entity.ClinicId = entity.ClinicId;
+                entity.OwnerId = model.OwnerId;
+                entity.VaccineName = model.VaccineName;
+                entity.Date = model.Date;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

@@ -243,6 +243,12 @@
     <Content Include="Views\Record\Create.cshtml" />
     <Content Include="Views\Pet\Create.cshtml" />
     <Content Include="Views\Clinic\Create.cshtml" />
+    <Content Include="Views\Pet\Details.cshtml" />
+    <Content Include="Views\Clinic\Details.cshtml" />
+    <Content Include="Views\Record\Details.cshtml" />
+    <Content Include="Views\Pet\Edit.cshtml" />
+    <Content Include="Views\Record\Edit.cshtml" />
+    <Content Include="Views\Clinic\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
