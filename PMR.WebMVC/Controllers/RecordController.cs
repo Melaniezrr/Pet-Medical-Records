@@ -92,6 +92,24 @@ namespace PMR.WebMVC.Controllers
             return View(model);
         }
 
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateRecordService();
+            var model = svc.GetById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteRecord(int id)
+        {
+            var service = CreateRecordService();
+            service.DeleteRecord(id);
+            TempData["SaveResult"] = "Your record was deleted";
+            return RedirectToAction("Index");
+        }
         private RecordService CreateRecordService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

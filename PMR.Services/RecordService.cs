@@ -92,5 +92,17 @@ namespace PMR.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        public bool DeleteRecord(int recordId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Records
+                    .Single(e => e.RecordId == recordId && e.OwnerId == _userId);
+                ctx.Records.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

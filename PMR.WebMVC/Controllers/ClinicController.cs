@@ -92,6 +92,25 @@ namespace PMR.WebMVC.Controllers
             return View(model);
         }
 
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateClinicService();
+            var model = svc.GetById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteClinic(int id)
+        {
+            var service = CreateClinicService();
+            service.DeleteClinic(id);
+            TempData["SaveResult"] = "Your Clinic was deleted";
+            return RedirectToAction("Index");
+        }
+
         private ClinicService CreateClinicService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

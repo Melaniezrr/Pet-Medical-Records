@@ -81,5 +81,17 @@ namespace PMR.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        public bool DeleteClinic(int clinicId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Clinics
+                    .Single(e => e.ClinicId == clinicId);
+                ctx.Clinics.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

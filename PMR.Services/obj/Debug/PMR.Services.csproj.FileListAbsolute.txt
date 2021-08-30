@@ -14,3 +14,9 @@ C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\obj\Debug\PMR.Services.cspr
 C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\obj\Debug\PMR.Services.csproj.CopyComplete
 C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\obj\Debug\PMR.Services.dll
 C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\obj\Debug\PMR.Services.pdb
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\bin\Debug\PMR.Data.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\bin\Debug\PMR.Models.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\bin\Debug\PMR.Data.pdb
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\bin\Debug\PMR.Data.dll.config
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\bin\Debug\PMR.Models.pdb
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Services\bin\Debug\PMR.Models.dll.config

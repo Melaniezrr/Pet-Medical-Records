@@ -249,6 +249,9 @@
     <Content Include="Views\Pet\Edit.cshtml" />
     <Content Include="Views\Record\Edit.cshtml" />
     <Content Include="Views\Clinic\Edit.cshtml" />
+    <Content Include="Views\Pet\Delete.cshtml" />
+    <Content Include="Views\Record\Delete.cshtml" />
+    <Content Include="Views\Clinic\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
