@@ -15,8 +15,11 @@ namespace PMR.Data
         public Guid OwnerId { get; set; }
         [ForeignKey(nameof(Pet))]
         public int PetId { get; set; }
+        virtual public Pet Pet { get; set; }
+
         [ForeignKey(nameof(Clinic))]
         public int ClinicId { get; set; }
+        virtual public Clinic Clinic { get; set; }
 
         [Required]
         public string VaccineName { get; set; }

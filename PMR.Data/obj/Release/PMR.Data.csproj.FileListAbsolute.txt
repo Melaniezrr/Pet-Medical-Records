@@ -1,0 +1,16 @@
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\PMR.Data.dll.config
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\PMR.Data.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\PMR.Data.pdb
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\EntityFramework.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\EntityFramework.xml
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\obj\Release\PMR.Data.csproj.AssemblyReference.cache
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\obj\Release\PMR.Data.csproj.CoreCompileInputs.cache
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\obj\Release\PMR.Data.csproj.CopyComplete
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\obj\Release\PMR.Data.dll
+C:\Users\melan\Documents\GitHub\PMR\PMR\PMR.Data\obj\Release\PMR.Data.pdb

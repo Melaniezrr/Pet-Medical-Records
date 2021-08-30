@@ -10,8 +10,8 @@ namespace PMR.Models
     public class RecordCreate
     {
         public Guid? OwnerId { get; set; }
-        public int? PetId { get; set; }
-        public int? ClinicId { get; set; }
+        public int PetId { get; set; }
+        public int ClinicId { get; set; }
         [Required]
         public string VaccineName { get; set; }
         [Required]

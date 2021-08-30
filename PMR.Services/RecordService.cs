@@ -22,8 +22,8 @@ namespace PMR.Services
 
         var entity = new Record()
             {
-                //PetId = model.PetId,
-                //ClinicId = model.ClinicId,
+                PetId = model.PetId,
+                ClinicId = model.ClinicId,
                 VaccineName = model.VaccineName,
                 Date = model.Date,
             };
