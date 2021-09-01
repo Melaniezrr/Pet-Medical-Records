@@ -9,7 +9,7 @@ namespace PMR.Models
 {
     public class RecordCreate
     {
-        public Guid? OwnerId { get; set; }
+        public Guid OwnerId { get; set; }
         public int PetId { get; set; }
         public int ClinicId { get; set; }
         [Required]

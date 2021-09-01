@@ -81,7 +81,6 @@ namespace PMR.Services
                     .Single(e => e.PetId == model.PetId && e.OwnerId == _userId);
 
                 entity.Name = model.Name;
-                entity.OwnerId = model.OwnerId;
                 entity.Age = model.Age;
                 entity.Type = model.Type;
 

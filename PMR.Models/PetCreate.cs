@@ -9,12 +9,12 @@ namespace PMR.Models
 {
     public class PetCreate
     {
-        [Required]
+ 
         public string Name { get; set; }
-        public Guid? OwnerId { get; set; }
-        [Required]
+        public Guid OwnerId { get; set; }
+   
         public int Age { get; set; }
-        [Required]
+  
         public string Type { get; set; }
     }
 }

@@ -23,7 +23,8 @@ namespace PMR.WebMVC.Controllers
         // Get
         public ActionResult Create()
         {
-            return View();
+            ClinicCreate model = new ClinicCreate();
+            return View(model);
         }
 
         [HttpPost]

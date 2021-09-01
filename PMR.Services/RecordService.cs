@@ -85,7 +85,6 @@ namespace PMR.Services
 
                 entity.PetId = entity.PetId;
                 entity.ClinicId = entity.ClinicId;
-                entity.OwnerId = model.OwnerId;
                 entity.VaccineName = model.VaccineName;
                 entity.Date = model.Date;
 

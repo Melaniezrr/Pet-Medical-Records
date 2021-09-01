@@ -24,14 +24,18 @@ namespace PMR.WebMVC.Controllers
         // Get
         public ActionResult Create()
         {
-            return View();
+            PetCreate model = new PetCreate();
+            return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(PetCreate model)
         {
+
             if (!ModelState.IsValid) return View(model);
+            //model.OwnerId = Guid.Parse(User.Identity.GetUserId());
+
             var service = CreatePetService();
 
             if (service.CreatePet(model))
