@@ -104,5 +104,6 @@ textarea {
 }
 
 .body-content {
+    width: 100%;
     margin-left: 20%;
 }
