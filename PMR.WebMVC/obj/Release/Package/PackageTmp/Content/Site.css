@@ -1,6 +1,4 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +19,90 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+/* Custom CSS */
+.main-wrapper {
+    display: flex;
+    
+}
+
+.side-menu {
+    background-color: #191919;
+    color: #3EB489;
+    height: 100%;
+    position: absolute;
+    width: 20%;
+    min-width: 20%;
+}
+
+.side-menu a {
+    color: #3EB489;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-block-start: 0;
+    padding-inline-start: 0;
+}
+
+.side-menu li {
+    border-top: 1px solid white;
+    padding-inline-start: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.side-menu li a {
+    margin-left: 20px;
+}
+
+.side-menu li:last-child {
+    border-bottom: 1px solid white;
+}
+
+
+.navbar-user {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.navbar-user-title {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper img {
+    width: 32px;
+}
+
+.logo-icon-wrapper {
+    text-align: center;
+}
+
+.logo-wrapper p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    font-size: 24px; 
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.body-content {
+    margin-left: 20%;
 }

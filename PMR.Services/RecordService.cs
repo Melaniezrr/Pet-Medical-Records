@@ -47,7 +47,8 @@ namespace PMR.Services
                             RecordId = e.RecordId,
                             VaccineName = e.VaccineName,
                             Date = e.Date,
-
+                            PetId = e.PetId,
+                            ClinicId = e.ClinicId,
                         }
                     );
 
